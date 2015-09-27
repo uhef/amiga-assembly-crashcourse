@@ -157,7 +157,7 @@ waitVB:
 	bra mainloop
 
 exit:
-; exit gracely - reverse everything done in init
+; exit gracefully - reverse everything done in init
 	move.w #$7fff,DMACON
 	move.w	olddmareq,DMACON
 	move.w #$7fff,INTENA
